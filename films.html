@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB — Фильмы</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="catalog.css">
+</head>
+<body>
+
+<header id="header">
+    <a href="index.html" class="logo">
+    <span class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="18" rx="3"/>
+        <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+      </svg>
+    </span>
+        <span class="logo-text">MovieDB</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="films.html" class="active">Фильмы</a>
+        <a href="series.html">Сериалы</a>
+    </nav>
+
+    <div class="header-tools">
+        <form class="search" role="search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="m20 20-3.5-3.5"/>
+            </svg>
+            <input type="text" placeholder="Поиск фильмов..." aria-label="Поиск">
+        </form>
+
+        <button class="icon-btn bell" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.7 21a2 2 0 0 1-3.4 0"/>
+            </svg>
+            <span class="badge"></span>
+        </button>
+
+        <button class="avatar" aria-label="Профиль">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+            </svg>
+        </button>
+    </div>
+</header>
+
+<main class="catalog">
+
+    <aside class="filters">
+        <div class="filter-block">
+            <h3 class="filter-title">Жанры</h3>
+            <ul class="filter-list">
+                <li class="active">Все</li>
+                <li>Боевик</li>
+                <li>Комедия</li>
+                <li>Драма</li>
+                <li>Фантастика</li>
+                <li>Ужасы</li>
+                <li>Триллер</li>
+            </ul>
+        </div>
+
+        <div class="filter-block">
+            <h3 class="filter-title">Год</h3>
+            <ul class="filter-list">
+                <li>2024</li>
+                <li>2023</li>
+                <li>2022</li>
+                <li>2021</li>
+            </ul>
+        </div>
+
+        <div class="filter-block">
+            <h3 class="filter-title">Рейтинг</h3>
+            <ul class="filter-list">
+                <li>От 5</li>
+                <li>От 7</li>
+                <li>От 8</li>
+                <li>От 9</li>
+            </ul>
+        </div>
+
+        <div class="filter-block">
+            <h3 class="filter-title">Страна</h3>
+            <ul class="filter-list">
+                <li>США</li>
+                <li>Россия</li>
+                <li>Великобритания</li>
+                <li>Франция</li>
+            </ul>
+        </div>
+
+        <button class="apply-btn">Применить</button>
+    </aside>
+
+    <section class="catalog-content">
+        <header class="catalog-header">
+            <h1>Фильмы</h1>
+            <a href="#" class="catalog-link">Все подборки и новинки проката →</a>
+        </header>
+
+        <div class="catalog-grid">
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+            <div class="catalog-card"></div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="18" rx="3"/>
+            <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+          </svg>
+        </span>
+                <span class="logo-text">MovieDB</span>
+            </a>
+            <p>Кино и сериалы без границ. Оценки, рецензии и персональные подборки —
+                всё в одном месте.</p>
+            <div class="socials">
+                <a href="#" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.6.2 1.4 1z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.5-5.2c-.3-1-1.1-1.7-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.5.5c-.9.3-1.7 1-2 2C1 8.5 1 12 1 12s0 3.5.5 5.2c.3 1 1.1 1.7 2 2 1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5c.9-.3 1.7-1 2-2 .5-1.7.5-5.2.5-5.2zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Разделы</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="series.html">Сериалы</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">API для разработчиков</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Оставайся в курсе</h4>
+            <ul>
+                <li><a href="#">Новинки проката</a></li>
+                <li><a href="#">Премьеры недели</a></li>
+                <li><a href="#">Топ-250</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2025 <b>MovieDB</b>. Все права защищены.</span>
+        <span>Сделано с любовью к кино 🎬</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
