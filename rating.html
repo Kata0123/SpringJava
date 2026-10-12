@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB — История оценок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="rating.css">
+</head>
+<body>
+
+<header id="header">
+    <a href="index.html" class="logo">
+    <span class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="18" rx="3"/>
+        <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+      </svg>
+    </span>
+        <span class="logo-text">MovieDB</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="films.html">Фильмы</a>
+        <a href="series.html">Сериалы</a>
+    </nav>
+
+    <div class="header-tools">
+        <form class="search" role="search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="m20 20-3.5-3.5"/>
+            </svg>
+            <input type="text" placeholder="Поиск..." aria-label="Поиск">
+        </form>
+
+        <button class="icon-btn bell" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.7 21a2 2 0 0 1-3.4 0"/>
+            </svg>
+            <span class="badge"></span>
+        </button>
+
+        <div class="avatar-wrap">
+            <button type="button" class="avatar active" aria-label="Профиль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </button>
+
+            <div class="avatar-menu">
+                <a href="profile.html">Профиль</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="rating.html">Оценки</a>
+                <a href="#">Ревью</a>
+                <button type="button" class="menu-logout">Выйти</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="rating-page">
+
+    <section class="rating-hero">
+
+        <h1 class="rating-hero-title">История оценок</h1>
+        <p class="rating-hero-sub">Фильмы и сериалы, которым вы поставили оценку.</p>
+
+        <div class="rating-hero-author">
+            <div class="rating-hero-avatar">
+                <span>ABA</span>
+            </div>
+            <div class="rating-hero-author-info">
+                <span class="rating-hero-created">Создано</span>
+                <span class="rating-hero-username">kata132</span>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="rating-toolbar">
+
+        <div class="rating-range">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 6h18M6 12h12M10 18h4"/>
+            </svg>
+            <div class="rating-range-text">
+                <span class="rating-range-main">1-250</span>
+                <span class="rating-range-sub">из 405</span>
+            </div>
+        </div>
+
+        <div class="rating-controls">
+            <button class="rating-select" type="button">
+                <span>По дате</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m6 9 6 6 6-6"/>
+                </svg>
+            </button>
+
+            <button class="rating-icon-btn" aria-label="Сортировка">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 4v16M7 4 3 8M7 4l4 4M17 20V4M17 20l-4-4M17 20l4-4"/>
+                </svg>
+            </button>
+
+            <button class="rating-icon-btn" aria-label="Вид">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01"/>
+                </svg>
+            </button>
+        </div>
+
+    </section>
+
+    <section class="rating-list">
+
+        <article class="rating-card">
+
+            <div class="rating-poster"></div>
+
+            <div class="rating-card-body">
+
+                <div class="rating-card-top">
+                    <span class="rating-date">Оценено 5 октября 2026</span>
+                </div>
+
+                <h3 class="rating-title">
+                    <span class="rating-title-number">2.</span>
+                    Resident Evil
+                </h3>
+
+                <div class="rating-card-meta">
+                    <span>2026</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>1 ч 34 мин</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>R</span>
+                </div>
+
+                <div class="rating-card-scores">
+          <span class="score-imdb">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>
+            <span class="score-strong">7.6</span>
+            <span class="score-muted">(94K)</span>
+          </span>
+                    <span class="score-star">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            <span class="score-strong">9</span>
+          </span>
+                    <span class="score-watched">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Просмотрено
+          </span>
+                </div>
+
+                <p class="rating-desc">
+                    Отчаянный курьер получает задание доставить посылку в отдалённую больницу.
+                    Вскоре он оказывается в центре вспышки и должен сражаться с ордами мутировавших существ, чтобы выжить.
+                </p>
+
+                <div class="rating-credits">
+                    <div class="credit">
+                        <span class="credit-label">Режиссёр</span>
+                        <span class="credit-value">Zach Cregger</span>
+                    </div>
+                    <div class="credit">
+                        <span class="credit-label">В ролях</span>
+                        <span class="credit-value">Austin Abrams, Zach Cherry, Kali Reis</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="rating-info" aria-label="Подробнее">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+            </button>
+
+        </article>
+
+        <article class="rating-card">
+
+            <div class="rating-poster"></div>
+
+            <div class="rating-card-body">
+
+                <div class="rating-card-top">
+                    <span class="rating-date">Оценено 5 октября 2026</span>
+                </div>
+
+                <h3 class="rating-title">
+                    <span class="rating-title-number">3.</span>
+                    Resident Evil
+                </h3>
+
+                <div class="rating-card-meta">
+                    <span>2026</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>1 ч 34 мин</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>R</span>
+                </div>
+
+                <div class="rating-card-scores">
+          <span class="score-imdb">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>
+            <span class="score-strong">7.6</span>
+            <span class="score-muted">(94K)</span>
+          </span>
+                    <span class="score-star">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            <span class="score-strong">9</span>
+          </span>
+                    <span class="score-watched">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Просмотрено
+          </span>
+                </div>
+
+                <p class="rating-desc">
+                    Отчаянный курьер получает задание доставить посылку в отдалённую больницу.
+                    Вскоре он оказывается в центре вспышки и должен сражаться с ордами мутировавших существ, чтобы выжить.
+                </p>
+
+                <div class="rating-credits">
+                    <div class="credit">
+                        <span class="credit-label">Режиссёр</span>
+                        <span class="credit-value">Zach Cregger</span>
+                    </div>
+                    <div class="credit">
+                        <span class="credit-label">В ролях</span>
+                        <span class="credit-value">Austin Abrams, Zach Cherry, Kali Reis</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="rating-info" aria-label="Подробнее">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+            </button>
+
+        </article>
+
+        <article class="rating-card">
+
+            <div class="rating-poster"></div>
+
+            <div class="rating-card-body">
+
+                <div class="rating-card-top">
+                    <span class="rating-date">Оценено 5 октября 2026</span>
+                </div>
+
+                <h3 class="rating-title">
+                    <span class="rating-title-number">4.</span>
+                    Resident Evil
+                </h3>
+
+                <div class="rating-card-meta">
+                    <span>2026</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>1 ч 34 мин</span>
+                    <span class="rating-meta-divider"></span>
+                    <span>R</span>
+                </div>
+
+                <div class="rating-card-scores">
+          <span class="score-imdb">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>
+            <span class="score-strong">7.6</span>
+            <span class="score-muted">(94K)</span>
+          </span>
+                    <span class="score-star">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            <span class="score-strong">9</span>
+          </span>
+                    <span class="score-watched">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+            Просмотрено
+          </span>
+                </div>
+
+                <p class="rating-desc">
+                    Отчаянный курьер получает задание доставить посылку в отдалённую больницу.
+                    Вскоре он оказывается в центре вспышки и должен сражаться с ордами мутировавших существ, чтобы выжить.
+                </p>
+
+                <div class="rating-credits">
+                    <div class="credit">
+                        <span class="credit-label">Режиссёр</span>
+                        <span class="credit-value">Zach Cregger</span>
+                    </div>
+                    <div class="credit">
+                        <span class="credit-label">В ролях</span>
+                        <span class="credit-value">Austin Abrams, Zach Cherry, Kali Reis</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <button class="rating-info" aria-label="Подробнее">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M12 16v-4M12 8h.01"/>
+                </svg>
+            </button>
+
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="18" rx="3"/>
+            <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+          </svg>
+        </span>
+                <span class="logo-text">MovieDB</span>
+            </a>
+            <p>Кино и сериалы без границ. Оценки, рецензии и персональные подборки —
+                всё в одном месте.</p>
+            <div class="socials">
+                <a href="#" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.6.2 1.4 1z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.5-5.2c-.3-1-1.1-1.7-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.5.5c-.9.3-1.7 1-2 2C1 8.5 1 12 1 12s0 3.5.5 5.2c.3 1 1.1 1.7 2 2 1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5c.9-.3 1.7-1 2-2 .5-1.7.5-5.2.5-5.2zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Разделы</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="series.html">Сериалы</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">API для разработчиков</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Оставайся в курсе</h4>
+            <ul>
+                <li><a href="#">Новинки проката</a></li>
+                <li><a href="#">Премьеры недели</a></li>
+                <li><a href="#">Топ-250</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2025 <b>MovieDB</b>. Все права защищены.</span>
+        <span>Сделано с любовью к кино 🎬</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

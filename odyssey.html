@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB — Одиссея 2026</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="odyssey.css">
+</head>
+<body>
+
+<header id="header">
+    <a href="index.html" class="logo">
+    <span class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="18" rx="3"/>
+        <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+      </svg>
+    </span>
+        <span class="logo-text">MovieDB</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="films.html" class="active">Фильмы</a>
+        <a href="series.html">Сериалы</a>
+    </nav>
+
+    <div class="header-tools">
+        <form class="search" role="search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="m20 20-3.5-3.5"/>
+            </svg>
+            <input type="text" placeholder="Поиск..." aria-label="Поиск">
+        </form>
+
+        <button class="icon-btn bell" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.7 21a2 2 0 0 1-3.4 0"/>
+            </svg>
+            <span class="badge"></span>
+        </button>
+
+        <div class="avatar-wrap">
+            <button type="button" class="avatar" aria-label="Профиль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </button>
+
+            <div class="avatar-menu">
+                <a href="profile.html">Профиль</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="rating.html">Оценки</a>
+                <a href="#">Ревью</a>
+                <button type="button" class="menu-logout">Выйти</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="title-page">
+
+    <section class="title-hero">
+        <div class="title-hero-bg"></div>
+        <div class="title-hero-overlay"></div>
+
+        <div class="title-hero-content">
+
+            <span class="premiere-badge">ПРЕМЬЕРА 2026</span>
+
+            <h1 class="title-name">
+                Одиссея
+                <span class="title-sub">The Odyssey</span>
+            </h1>
+
+            <div class="title-meta">
+        <span class="meta-rating">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+          9.1
+        </span>
+                <span class="meta-divider"></span>
+                <span class="meta-item">16+</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item">2026</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item">Эпос, Драма, Приключения</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item">The Odyssey</span>
+                <span class="meta-divider"></span>
+                <span class="meta-item meta-sound">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h3l5 5V5L6 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zm-2.5-8v2a7 7 0 0 1 0 12v2a9 9 0 0 0 0-16z"/></svg>
+          ENG, RUS
+        </span>
+                <span class="meta-divider"></span>
+                <span class="meta-item meta-sound">CC RUS</span>
+            </div>
+
+            <p class="title-desc">
+                Царь Одиссей отправляется в долгий путь домой после падения Трои,
+                но боги и чудовища не готовы отпустить его так просто
+            </p>
+
+            <div class="title-actions">
+                <button class="btn-watch">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                    <span>Смотреть</span>
+                </button>
+
+                <button class="btn-circle" aria-label="Трейлер">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M10 8l6 4-6 4V8z" fill="currentColor"/>
+                    </svg>
+                </button>
+
+                <button class="btn-circle" aria-label="В избранное">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 0 0-7.8 7.8l1 1L12 21l7.8-7.6 1-1a5.5 5.5 0 0 0 0-7.8z"/>
+                    </svg>
+                </button>
+
+                <button class="btn-circle" aria-label="Поделиться">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                         stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="18" cy="5" r="3"/>
+                        <circle cx="6" cy="12" r="3"/>
+                        <circle cx="18" cy="19" r="3"/>
+                        <path d="M8.6 13.5 15.4 17.5M15.4 6.5 8.6 10.5"/>
+                    </svg>
+                </button>
+            </div>
+
+            <span class="subscription-note">доступно по подписке</span>
+
+        </div>
+    </section>
+
+    <section class="info-tabs">
+        <div class="tab-nav">
+            <button class="tab-btn active" data-tab="info">Информация</button>
+            <button class="tab-btn" data-tab="cast">Актёры</button>
+            <button class="tab-btn" data-tab="reviews">Отзывы</button>
+        </div>
+
+        <div class="tab-content">
+
+            <div class="tab-pane active" id="tab-info">
+                <div class="info-grid">
+
+                    <div class="info-text">
+                        <h3 class="info-title">Одиссея</h3>
+                        <p>
+                            После десяти лет Троянской войны царь Итаки Одиссей отправляется домой к своей жене
+                            Пенелопе и сыну Телемаху. Но боги разгневаны, и путь домой оказывается длиннее и
+                            опаснее, чем сама война. Одиссею предстоит встретиться с циклопом Полифемом, пройти
+                            между Сциллой и Харибдой, пережить гнев Посейдона и чары волшебницы Кирки. Это
+                            история о верности, хитрости и цене, которую платит человек, чтобы вернуться домой.
+                            Эпическая экранизация великой поэмы Гомера от режиссёра Кристофера Нолана.
+                        </p>
+                        <p>
+                            Съёмки проходили в Греции, Италии, Марокко и Исландии. Производство заняло более трёх
+                            лет, а бюджет картины стал одним из самых больших в истории студии Universal Pictures.
+                        </p>
+                    </div>
+
+                    <aside class="info-details">
+                        <div class="detail-row">
+                            <span class="detail-label">Страна</span>
+                            <span class="detail-value">США, Великобритания</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Студия</span>
+                            <span class="detail-value">Universal Pictures</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Режиссёр</span>
+                            <span class="detail-value">Кристофер Нолан</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Жанры</span>
+                            <span class="detail-value">Эпос, Драма, Приключения</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Премьера</span>
+                            <span class="detail-value">17 июля 2026</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Длительность</span>
+                            <span class="detail-value">2 ч 46 мин</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Бюджет</span>
+                            <span class="detail-value">$250 000 000</span>
+                        </div>
+                        <div class="detail-row">
+                            <span class="detail-label">Возраст</span>
+                            <span class="detail-value">16+</span>
+                        </div>
+                    </aside>
+
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-cast">
+                <div class="cast-grid">
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Мэттью МакКонахи</span>
+                        <span class="cast-role">Одиссей</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Энн Хэтэуэй</span>
+                        <span class="cast-role">Пенелопа</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Том Харди</span>
+                        <span class="cast-role">Посейдон</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Флоренс Пью</span>
+                        <span class="cast-role">Кирка</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Киллиан Мёрфи</span>
+                        <span class="cast-role">Телемах</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Роберт Паттинсон</span>
+                        <span class="cast-role">Антиной</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Зендея</span>
+                        <span class="cast-role">Афина</span>
+                    </div>
+
+                    <div class="cast-card">
+                        <div class="cast-avatar"></div>
+                        <span class="cast-name">Джон Дэвид Вашингтон</span>
+                        <span class="cast-role">Полифем</span>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab-reviews">
+                <div class="reviews-empty">
+                    <span class="reviews-icon">💬</span>
+                    <p>Пока нет отзывов. Стань первым, кто оставит отзыв о фильме.</p>
+                    <button class="reviews-btn">Написать отзыв</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="18" rx="3"/>
+            <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+          </svg>
+        </span>
+                <span class="logo-text">MovieDB</span>
+            </a>
+            <p>Кино и сериалы без границ. Оценки, рецензии и персональные подборки —
+                всё в одном месте.</p>
+            <div class="socials">
+                <a href="#" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.6.2 1.4 1z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.5-5.2c-.3-1-1.1-1.7-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.5.5c-.9.3-1.7 1-2 2C1 8.5 1 12 1 12s0 3.5.5 5.2c.3 1 1.1 1.7 2 2 1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5c.9-.3 1.7-1 2-2 .5-1.7.5-5.2.5-5.2zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Разделы</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="series.html">Сериалы</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">API для разработчиков</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Оставайся в курсе</h4>
+            <ul>
+                <li><a href="#">Новинки проката</a></li>
+                <li><a href="#">Премьеры недели</a></li>
+                <li><a href="#">Топ-250</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2025 <b>MovieDB</b>. Все права защищены.</span>
+        <span>Сделано с любовью к кино 🎬</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+<script src="odyssey.js"></script>
+</body>
+</html>

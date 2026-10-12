@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieDB — Список просмотра</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="watchlist.css">
+</head>
+<body>
+
+<header id="header">
+    <a href="index.html" class="logo">
+    <span class="logo-icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+           stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="3" width="20" height="18" rx="3"/>
+        <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+      </svg>
+    </span>
+        <span class="logo-text">MovieDB</span>
+    </a>
+
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="films.html">Фильмы</a>
+        <a href="series.html">Сериалы</a>
+    </nav>
+
+    <div class="header-tools">
+        <form class="search" role="search">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="11" cy="11" r="7"/>
+                <path d="m20 20-3.5-3.5"/>
+            </svg>
+            <input type="text" placeholder="Поиск..." aria-label="Поиск">
+        </form>
+
+        <button class="icon-btn bell" aria-label="Уведомления">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                 stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9"/>
+                <path d="M13.7 21a2 2 0 0 1-3.4 0"/>
+            </svg>
+            <span class="badge"></span>
+        </button>
+
+        <div class="avatar-wrap">
+            <button type="button" class="avatar active" aria-label="Профиль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </button>
+
+            <div class="avatar-menu">
+                <a href="profile.html">Профиль</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="rating.html">Оценки</a>
+                <a href="#">Ревью</a>
+                <button type="button" class="menu-logout">Выйти</button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<main class="watchlist-page">
+
+    <section class="watchlist-header">
+
+        <div class="watchlist-avatar">
+            <span>ABA</span>
+        </div>
+
+        <div class="watchlist-user">
+            <div class="watchlist-nick">НИК</div>
+            <p class="watchlist-note">Текст для дотраха ?????</p>
+        </div>
+
+    </section>
+
+    <section class="watchlist-list">
+
+        <article class="watchlist-item">
+            <div class="watchlist-poster"></div>
+
+            <div class="watchlist-content">
+
+                <h3 class="watchlist-name">Одиссея</h3>
+
+                <div class="watchlist-meta">
+          <span class="meta-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            9.1
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">16+</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">2026</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">Эпос, Драма, Приключения</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">The Odyssey</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h3l5 5V5L6 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zm-2.5-8v2a7 7 0 0 1 0 12v2a9 9 0 0 0 0-16z"/></svg>
+            ENG, RUS
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">CC RUS</span>
+                </div>
+
+                <button class="watchlist-remove" type="button">Удалить из листа</button>
+
+            </div>
+        </article>
+
+        <article class="watchlist-item">
+            <div class="watchlist-poster"></div>
+
+            <div class="watchlist-content">
+
+                <h3 class="watchlist-name">Одиссея</h3>
+
+                <div class="watchlist-meta">
+          <span class="meta-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            9.1
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">16+</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">2026</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">Эпос, Драма, Приключения</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">The Odyssey</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h3l5 5V5L6 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zm-2.5-8v2a7 7 0 0 1 0 12v2a9 9 0 0 0 0-16z"/></svg>
+            ENG, RUS
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">CC RUS</span>
+                </div>
+
+                <button class="watchlist-remove" type="button">Удалить из листа</button>
+
+            </div>
+        </article>
+
+        <article class="watchlist-item">
+            <div class="watchlist-poster"></div>
+
+            <div class="watchlist-content">
+
+                <h3 class="watchlist-name">Одиссея</h3>
+
+                <div class="watchlist-meta">
+          <span class="meta-rating">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3 6.9 7.5.6-5.7 4.9 1.8 7.3L12 17.8 5.4 21.7l1.8-7.3L1.5 9.5 9 8.9 12 2z"/></svg>
+            9.1
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">16+</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">2026</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">Эпос, Драма, Приключения</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item">The Odyssey</span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h3l5 5V5L6 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zm-2.5-8v2a7 7 0 0 1 0 12v2a9 9 0 0 0 0-16z"/></svg>
+            ENG, RUS
+          </span>
+                    <span class="meta-divider"></span>
+                    <span class="meta-item meta-sound">CC RUS</span>
+                </div>
+
+                <button class="watchlist-remove" type="button">Удалить из листа</button>
+
+            </div>
+        </article>
+
+    </section>
+
+</main>
+
+<footer>
+    <div class="footer-grid">
+        <div class="footer-brand">
+            <a href="index.html" class="logo">
+        <span class="logo-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"
+               stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="18" rx="3"/>
+            <path d="M7 3v18M17 3v18M2 8h5M2 16h5M17 8h5M17 16h5"/>
+          </svg>
+        </span>
+                <span class="logo-text">MovieDB</span>
+            </a>
+            <p>Кино и сериалы без границ. Оценки, рецензии и персональные подборки —
+                всё в одном месте.</p>
+            <div class="socials">
+                <a href="#" aria-label="Telegram">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.9 4.3 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.2.2-.4.4-.9.4l.3-4.7 8.5-7.7c.4-.3-.1-.5-.6-.2L7.3 12.9l-4.5-1.4c-1-.3-1-1 .2-1.4l17.5-6.8c.8-.3 1.6.2 1.4 1z"/></svg>
+                </a>
+                <a href="#" aria-label="YouTube">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23 12s0-3.5-.5-5.2c-.3-1-1.1-1.7-2-2C18.8 4.3 12 4.3 12 4.3s-6.8 0-8.5.5c-.9.3-1.7 1-2 2C1 8.5 1 12 1 12s0 3.5.5 5.2c.3 1 1.1 1.7 2 2 1.7.5 8.5.5 8.5.5s6.8 0 8.5-.5c.9-.3 1.7-1 2-2 .5-1.7.5-5.2.5-5.2zM9.8 15.3V8.7l5.7 3.3-5.7 3.3z"/></svg>
+                </a>
+                <a href="#" aria-label="GitHub">
+                    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.8c-2.8.6-3.4-1.3-3.4-1.3-.5-1.2-1.1-1.5-1.1-1.5-.9-.6.1-.6.1-.6 1 .1 1.6 1.1 1.6 1.1.9 1.6 2.4 1.1 3 .9.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-5 0-1.1.4-2 1-2.7-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.7 1 1.6 1 2.7 0 3.9-2.4 4.7-4.6 5 .4.3.7.9.7 1.9v2.8c0 .3.2.6.7.5A10 10 0 0 0 12 2z"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-col">
+            <h4>Разделы</h4>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="films.html">Фильмы</a></li>
+                <li><a href="series.html">Сериалы</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Помощь</h4>
+            <ul>
+                <li><a href="#">О проекте</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Обратная связь</a></li>
+                <li><a href="#">API для разработчиков</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>Оставайся в курсе</h4>
+            <ul>
+                <li><a href="#">Новинки проката</a></li>
+                <li><a href="#">Премьеры недели</a></li>
+                <li><a href="#">Топ-250</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2025 <b>MovieDB</b>. Все права защищены.</span>
+        <span>Сделано с любовью к кино 🎬</span>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

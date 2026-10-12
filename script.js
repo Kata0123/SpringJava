@@ -37,3 +37,27 @@
 
     updateHeader();
 })();
+
+(function () {
+    var avatar = document.querySelector('.avatar-wrap .avatar');
+    var menu = document.querySelector('.avatar-menu');
+    if (!avatar || !menu) return;
+
+    avatar.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        menu.classList.toggle('open');
+    });
+
+    document.addEventListener('click', function (e) {
+        if (!menu.contains(e.target) && !avatar.contains(e.target)) {
+            menu.classList.remove('open');
+        }
+    });
+
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            menu.classList.remove('open');
+        }
+    });
+})();

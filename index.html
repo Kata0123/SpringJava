@@ -45,13 +45,23 @@
             <span class="badge"></span>
         </button>
 
-        <button class="avatar" aria-label="Профиль">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
-                 stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="8" r="4"/>
-                <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
-            </svg>
-        </button>
+        <div class="avatar-wrap">
+            <button type="button" class="avatar" aria-label="Профиль">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+                     stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"/>
+                    <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7"/>
+                </svg>
+            </button>
+
+            <div class="avatar-menu">
+                <a href="profile.html">Профиль</a>
+                <a href="watchlist.html">Watchlist</a>
+                <a href="rating.html">Оценки</a>
+                <a href="#">Ревью</a>
+                <button type="button" class="menu-logout">Выйти</button>
+            </div>
+        </div>
     </div>
 </header>
 
