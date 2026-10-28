@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Фильм — Кадр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="movie">
+<header class="top" id="top">
+  <a class="logo" href="index.html">Кадр</a>
+  <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="wheel.html">Колесо удачи</a></nav>
+  <div class="auth" id="auth"></div>
+</header>
+
+<section class="wrap page"><div id="content"></div></section>
+
+<footer class="foot">Кадр, все права защищены</footer>
+<dialog id="loginModal">
+  <form class="login" id="loginForm">
+    <button class="x" type="button" id="loginClose" aria-label="Закрыть">×</button>
+    <h3>Вход</h3>
+    <label>Имя пользователя<input name="name" required autocomplete="username"></label>
+    <label>Пароль<input name="pass" type="password" required autocomplete="current-password"></label>
+    <button class="btn">Войти</button>
+  </form>
+</dialog>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/themes.js"></script>
+<script src="js/movie.js"></script>
+</body>
+</html>

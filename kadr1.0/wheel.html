@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Колесо удачи — Кадр</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Unbounded:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="wheel">
+<header class="top" id="top">
+  <a class="logo" href="index.html">Кадр</a>
+  <nav><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="wheel.html">Колесо удачи</a></nav>
+  <div class="auth" id="auth"></div>
+</header>
+
+<section class="wrap page">
+  <h2>Колесо удачи</h2>
+  <p class="lead">Не знаете, что посмотреть? Крутите колесо: оно выберет случайный фильм или сериал из подборки в 50 вариантов.</p>
+  <div class="wheel-box">
+    <div class="wheel-wrap">
+      <div class="pointer"></div>
+      <canvas id="wheel" width="640" height="640" aria-label="Колесо с фильмами"></canvas>
+      <button class="hub" id="spin" type="button">Крутить</button>
+    </div>
+    <div id="result" aria-live="polite"><p class="lead">Результат появится здесь после первого вращения.</p></div>
+  </div>
+</section>
+
+<footer class="foot">Кадр, все права защищены</footer>
+<dialog id="loginModal">
+  <form class="login" id="loginForm">
+    <button class="x" type="button" id="loginClose" aria-label="Закрыть">×</button>
+    <h3>Вход</h3>
+    <label>Имя пользователя<input name="name" required autocomplete="username"></label>
+    <label>Пароль<input name="pass" type="password" required autocomplete="current-password"></label>
+    <button class="btn">Войти</button>
+  </form>
+</dialog>
+<script src="js/data.js"></script>
+<script src="js/common.js"></script>
+<script src="js/wheel.js"></script>
+</body>
+</html>
